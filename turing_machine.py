@@ -25,6 +25,7 @@ class TuringMachine:
                 'state': current_state,
                 'left_hand_side': left_hand_side,
                 'symbol': current_symbol,
+                'right_hand_side' : right_hand_side
             }
             yield (action, config)
 
