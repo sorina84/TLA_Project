@@ -72,11 +72,9 @@ class TuringMachine:
         step = 0
         for action, config in self.run(input_):
             if step >= step_limit:
-                print("... (step limit reached)")
+                print("...")
                 break
-            left = ''.join(reversed(config['left_hand_side']))
-            sym = config['symbol']
-            print(f"Step {step}: state={config['state']}, tape=...{left}[{sym}]... , action={action}")
+            print(f"config = {config}")
             step += 1
             if action is not None:
                 break
